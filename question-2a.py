@@ -1,3 +1,4 @@
+#Using NaiveByes
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 gls_df=pd.read_csv("./glass.csv")
