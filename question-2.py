@@ -1,4 +1,4 @@
-#Using SVM
+#Using NAIVE BAYES
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -11,6 +11,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 classifier=GaussianNB()
 classifier.fit(X,y)
 y_pred=classifier.predict(X_test)
+
+#USING SVM
 from sklearn.svm import SVC
 svc = SVC(max_iter=1000)
 X_trainsvc, X_testsvc, y_trainsvc, y_testsvc = train_test_split(X, y, test_size = 0.2, random_state = 0)
