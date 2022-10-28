@@ -15,7 +15,7 @@ print(matrix)
 sns.heatmap(matrix, annot=True, vmax=1, vmin=-1, center=0, cmap='vlag')
 plt.show()
 
-# We need to keep the "Sex" feature because it has high correlation with survived which is the feature which is to be found
+# We need to keep the "Sex" feature because it has high correlation with survived which is the feature to be found
 sns.histplot(data=t_train, x="Survived", hue="Sex")
 plt.show()
 classifier=GaussianNB()
